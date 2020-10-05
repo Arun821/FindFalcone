@@ -1,0 +1,17 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .foot{
+    height: 40px;
+    background-color: rgba(223, 221, 221, 0.795);
+    color: rgba(59, 59, 59, 0.993);
+    font-size: 15px;
+  }
+  .foot span{
+    margin-left: 300px;
+  }
+  a{
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+  }

@@ -1,0 +1,27 @@
+<section>
+  <div class="container">
+    <div class="col col-12 text-center">
+      <div class="success" *ngIf="responseStatus == 'success'">
+        <h1>Success! Congratulations on Finding Falcone. King Shan is mighty pleased!!</h1>
+        <br>
+        <h2>Time taken: {{timeTaken}}</h2>
+        <h2>Planet found: {{responsePlanet}}</h2>
+      </div>
+  
+      <div class="fail" *ngIf="responseStatus == 'false'">
+        <h1>Ooops!!!</h1>
+        <h2>Can't find Falcone. Shall we try again? </h2>
+      </div>
+  
+    </div>
+  
+    <div class="col col-12 text-center error" *ngIf="responseErr">
+      <h4>Error Occurred: {{responseErr}}</h4>
+    </div>
+  
+    <div class="col col-12 text-center">
+      <button mat-raised-button class="btn btn-success" (click)="home()">Start Again</button>
+    </div>
+  </div>
+
+</section>

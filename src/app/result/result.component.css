@@ -1,0 +1,37 @@
+.error {
+    color: red;
+  }
+  
+  button {
+    margin-top: 200px;
+  }
+
+  h1{
+    font-size: 32px;
+    font-family: 'Balsamiq Sans', cursive;
+  }
+  
+  h2{
+    font-size: 25px;
+    font-family: 'Lora', serif;
+  }
+  
+  section{
+    margin: 10px;
+    height: 500px;
+    
+    padding: 25px 15px 15px 15px;
+
+  }
+
+  .success{
+    color: green;
+  }
+
+  .fail{
+    color: red;
+  }
+  .fail h2{
+    font-size: 25px;
+    font-family: 'Lora', serif;
+  }

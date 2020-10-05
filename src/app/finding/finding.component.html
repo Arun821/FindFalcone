@@ -1,0 +1,46 @@
+<section class="bdy">
+  <h1>Finding Falcone!</h1>
+  <div class="container">
+    <h2>Select planets you want to search in:</h2>
+    <br />
+
+    <div class="row title">
+      <div class="col col-2 ">
+        <div class="font-weight-bold text-center">Destination 1</div>
+        <app-home [destination_no]="1" [planet]="availablePlanets" [vehicle]="vehicles"
+          (selectedDestination)='selectedDestination($event)'>
+        </app-home>
+      </div>
+      <div class="col col-2">
+        <div class="font-weight-bold text-center">Destination 2</div>
+        <app-home [destination_no]="2" [planet]="availablePlanets" [vehicle]="vehicles"
+          (selectedDestination)='selectedDestination($event)'>
+        </app-home>
+      </div>
+      <div class="col col-2 ">
+        <div class="font-weight-bold text-center">Destination 3</div>
+        <app-home [destination_no]="3" [planet]="availablePlanets" [vehicle]="vehicles"
+          (selectedDestination)='selectedDestination($event)'>
+        </app-home>
+      </div>
+      <div class="col col-2 ">
+        <div class="font-weight-bold text-center">Destination 4</div>
+        <app-home [destination_no]="4" [planet]="availablePlanets" [vehicle]="vehicles"
+          (selectedDestination)='selectedDestination($event)'>
+        </app-home>
+      </div>
+      <div class="col col-4 ">
+        <h3>Time taken : {{timeTaken}}</h3>
+      </div>
+    </div>
+
+    <br />
+    <div class="text-center" *ngIf="selectedDestinations.length > 3">
+      <button mat-raised-button class="btn btn-primary" (click)="find()">Find Falcone</button>
+    </div>
+
+  </div>
+
+
+</section>
+
